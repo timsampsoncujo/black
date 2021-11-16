@@ -43,6 +43,9 @@ endif
 if !exists("g:black_linelength")
   let g:black_linelength = 88
 endif
+if !exists("g:black_skip_magic_trailing_comma")
+  let g:black_skip_magic_trailing_comma = 0
+endif
 if !exists("g:black_skip_string_normalization")
   if exists("g:black_string_normalization")
     let g:black_skip_string_normalization = !g:black_string_normalization
